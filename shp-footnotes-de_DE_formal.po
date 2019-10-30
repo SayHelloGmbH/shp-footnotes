@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Footnotes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 08:58+0000\n"
-"PO-Revision-Date: 2019-10-30 09:00+0000\n"
+"POT-Creation-Date: 2019-10-30 09:19+0000\n"
+"PO-Revision-Date: 2019-10-30 09:19+0000\n"
 "Last-Translator: Say Hello GmbH <mark@sayhello.ch>\n"
 "Language-Team: Deutsch (Sie)\n"
 "Language: de_DE_formal\n"
@@ -14,52 +14,40 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.3.1; wp-5.2.4"
 
-#: shp-footnotes-admin.php:31
+#: shp-footnotes-admin.php:27
 msgid "Options saved."
 msgstr "Einstellungen gespeichert."
 
-#. Name of the plugin
-#: shp-footnotes-admin.php:37 shp-footnotes.php:52 shp-footnotes.php:177
-#: shp-footnotes.php:243
-msgid "Footnotes"
-msgstr "Fußnotizen"
-
-#: shp-footnotes-admin.php:45 shp-footnotes-admin.php:50 shp-footnotes.php:242
+#: shp-footnotes-admin.php:39 shp-footnotes-admin.php:44 shp-footnotes.php:229
 msgid "Footnotes Settings"
-msgstr "Einstellungen für Fußnotizen"
+msgstr "Einstellungen für Fussnotizen"
 
-#: shp-footnotes-admin.php:51
-msgid ""
-"Want to add a label to your footnotes section at the bottom of your post? "
-"Just enter some text here and check the box and you're good to go."
-msgstr ""
-"Sie möchten eine Beschriftung zu den Fußnotizen-Bereich hinzufügen? Geben "
-"Sie einfach Ihren Text hier ein."
+#: shp-footnotes-admin.php:46
+msgid "Hide Footnotes after post content: "
+msgstr "Fussnotizen nach Beitragsinhalt verstecken:"
 
-#: shp-footnotes-admin.php:52
-msgid "Footnotes Label: "
-msgstr "Fußnotizen-Legende"
-
-#: shp-footnotes-admin.php:54
-msgid "Insert Footnotes Label: "
-msgstr "Fußnotizen-Beschriftung eingeben:"
+#: shp-footnotes-admin.php:48
+msgid "Show Footnotes on Front Page: "
+msgstr "Fussnotizen auf der Startseite anzeigen:"
 
 #: shp-footnotes-admin.php:56
-msgid "Hide Footnotes after post content: "
-msgstr "Fußnotizen nach Beitragsinhalt verstecken:"
-
-#: shp-footnotes-admin.php:58
-msgid "Show Footnotes on Front Page: "
-msgstr "Fußnotizen auf der Startseite anzeigen:"
-
-#: shp-footnotes-admin.php:66
 msgid "Shortcode: [note]Insert your note here.[/note]"
-msgstr "Shortcode: [notiz]Fußnotiz hier hinzufügen.[/notiz]"
+msgstr "Shortcode: [notiz]Fussnotiz hier hinzufügen.[/notiz]"
+
+#: shp-footnotes.php:184
+msgctxt "List title (frontend)"
+msgid "Footnotes"
+msgstr "Fussnotizen"
+
+#. Name of the plugin
+#: shp-footnotes.php:230
+msgid "Footnotes"
+msgstr "Fussnotizen"
 
 #. Description of the plugin
 msgid "Easily add footnotes to your posts with a simple shortcode."
 msgstr ""
-"Fußnotizen ganz einfach zu Ihren Beiträgen mittels Shortcode hinzufügen."
+"Fussnotizen ganz einfach zu Ihren Beiträgen mittels Shortcode hinzufügen."
 
 #. URI of the plugin
 msgid "https://github.com/sayhellogmbh/shp-footnotes"
