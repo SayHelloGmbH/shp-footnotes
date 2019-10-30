@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Footnotes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-30 08:47+0000\n"
+"PO-Revision-Date: 2019-10-30 08:50+0000\n"
+"Last-Translator: Say Hello GmbH <mark@sayhello.ch>\n"
+"Language-Team: Deutsch (Sie)\n"
+"Language: de_DE_formal\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.2.4"
+
+#. Description of the plugin
+msgid "Easily add footnotes to your posts with a simple shortcode."
+msgstr ""
+"Fußnotizen ganz einfach zu Ihren Beiträgen mittels Shortcode hinzufügen."
+
+#. Name of the plugin
+#: shp-footnotes-admin.php:52 shp-footnotes.php:52 shp-footnotes.php:171
+#: shp-footnotes.php:237
+msgid "Footnotes"
+msgstr "Fußnotizen"
+
+#: shp-footnotes-admin.php:67
+msgid "Footnotes Label: "
+msgstr "Fußnotizen-Legende"
+
+#: shp-footnotes-admin.php:60 shp-footnotes-admin.php:65 shp-footnotes.php:236
+msgid "Footnotes Settings"
+msgstr "Einstellungen für Fußnotizen"
+
+#: shp-footnotes-admin.php:71
+msgid "Hide Footnotes after post content: "
+msgstr "Fußnotizen nach Beitragsinhalt verstecken:"
+
+#. URI of the plugin
+msgid "https://github.com/sayhellogmbh/shp-footnotes"
+msgstr "https://github.com/sayhellogmbh/shp-footnotes"
+
+#. Author URI of the plugin
+msgid "https://sayhello.ch"
+msgstr "https://sayhello.ch"
+
+#: shp-footnotes-admin.php:69
+msgid "Insert Footnotes Label: "
+msgstr "Fußnotizen-Beschriftung eingeben:"
+
+#: shp-footnotes-admin.php:46
+msgid "Options saved."
+msgstr "Einstellungen gespeichert."
+
+#. Author of the plugin
+msgid "Say Hello GmbH"
+msgstr "Say Hello GmbH"
+
+#: shp-footnotes-admin.php:81
+msgid "Shortcode: [note]Insert your note here.[/note]"
+msgstr "Shortcode: [note]Fußnotiz hier hinzufügen.[/note]"
+
+#: shp-footnotes-admin.php:73
+msgid "Show Footnotes on Front Page: "
+msgstr "Fußnotizen auf der Startseite anzeigen:"
+
+#: shp-footnotes-admin.php:66
+msgid ""
+"Want to add a label to your footnotes section at the bottom of your post? "
+"Just enter some text here and check the box and you're good to go."
+msgstr ""
+"Sie möchten eine Beschriftung zu den Fußnotizen-Bereich hinzufügen? Geben "
+"Sie einfach Ihren Text hier ein."
