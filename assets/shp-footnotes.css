@@ -1,0 +1,9 @@
+.shp-footnotes__totop {
+	display: inline-block;
+	margin-left: 10px;
+}
+.shp-footnotes__totop:after {
+	content: "\f474";
+	font-family: 'dashicons';
+	line-height: 1;
+}
