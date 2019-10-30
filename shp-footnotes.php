@@ -3,7 +3,7 @@
  * Plugin Name: Footnotes
  * Plugin URI: https://github.com/sayhellogmbh/shp-footnotes
  * Description: Easily add footnotes to your posts with a simple shortcode.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Say Hello GmbH
  * Author URI: https://sayhello.ch
  * License: GPL2
@@ -49,8 +49,6 @@ class ShpFootnotes
 	public function __construct()
 	{
 		$this->footnoteSettings = array(
-			'footnoteLabel'                  => __('Footnotes', 'shp-footnotes'),
-			'useLabel'                       => false,
 			'hide_shp_footnote_after_posts' => false,
 			'show_shp_footnote_on_front'    => false,
 		);
@@ -133,7 +131,7 @@ class ShpFootnotes
 			$footnoteLink = get_permalink(get_the_ID()) . '#shp-footnote-bottom-' . $this->footnoteCount . '-' . $post_id;
 		}
 
-		$footnoteContent = "<span id='shp-footnote-" . esc_attr($this->footnoteCount) . '-' . $post_id . "' class='shp-footnote-margin-adjust'></span><span class='shp-footnote'><a href='" . esc_url($footnoteLink) . "' title='" . htmlspecialchars($content, ENT_QUOTES) . "'><sup>" . esc_html($this->footnoteCount) . "</sup></a></span>";
+		$footnoteContent = "<span class='shp-footnotes__linkwrapper'><a class='shp-footnotes__link' href='" . esc_url($footnoteLink) . "' title='" . htmlspecialchars($content, ENT_QUOTES) . "'><sup>" . esc_html($this->footnoteCount) . "</sup></a></span>";
 
 		return $footnoteContent;
 	}
@@ -173,28 +171,17 @@ class ShpFootnotes
 			$footnoteCopy = '';
 			$shpefn_output = '';
 
-			$useLabel = isset($this->footnoteOptions['useLabel']) ? $this->footnoteOptions['useLabel'] : false;
-			$efLabel  = isset($this->footnoteOptions['footnoteLabel']) ? $this->footnoteOptions['footnoteLabel'] : __('Footnotes', 'shp-footnotes');
-
 			$post_id = get_the_ID();
 
 			foreach ($footnotesInsert as $count => $footnote) {
-				$footnoteCopy .= '<li class="shp-footnote-single"><span id="shp-footnote-bottom-' .esc_attr($count) . '-' . $post_id . '" class="shp-footnote-margin-adjust"></span>' . wp_kses_post($footnote) . '<a class="shp-footnote-to-top" href="' . esc_url('#shp-footnote-' . $count . '-' . $post_id) . '"></a></li>';
+				$footnoteCopy .= '<li class="shp-footnotes__entry">' . wp_kses_post($footnote) . '<a class="shp-footnotes__totop" href="' . esc_url('#shp-footnote-' . $count . '-' . $post_id) . '"></a></li>';
 			}
 			if (! empty($footnotesInsert)) {
-				if (true === $useLabel) {
-					$footnote_label = '<div class="shp-footnote-title"><h4>' . esc_html($efLabel) . '</h4></div>';
-					// Filter for editing footnote label markup and output.
-					$footnote_label = apply_filters('shpefn_footnote_label', $footnote_label, $efLabel);
-
-					$shpefn_output .= $footnote_label;
-				}
-
 				$footnote_content = '';
 
 				// Add filter before footnote list.
 				$footnote_content  = apply_filters('before_footnote', $footnote_content);
-				$footnote_content .= '<ol class="shp-footnotes-wrapper">' . $footnoteCopy . '</ol>';
+				$footnote_content .= '<div class="shp-footnotes"><h3 class="shp-footnotes__title">' .apply_filters('shp_footnotes_title', _x('Footnotes', 'List title (frontend)', 'shp-footnotes')). '</h3><ol class="shp-footnotes__entries">' . $footnoteCopy . '</ol></div>';
 
 				// Add filter after footnote list.
 				$footnote_content = apply_filters('after_footnote', $footnote_content);
